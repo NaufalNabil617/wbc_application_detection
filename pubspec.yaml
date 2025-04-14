@@ -1,0 +1,37 @@
+name: wbc_detection
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  camera: ^0.10.5+5
+  image_picker_web: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_native_splash: ^2.3.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/icon.png
+
+flutter_native_splash:
+  color: "#A8E063"
+  gradient:
+    colors: ["#A8E063", "#56AB2F"]
+    begin: topRight
+    end: bottomLeft
+  android: true
+  ios: true
+  fullscreen: true
+
